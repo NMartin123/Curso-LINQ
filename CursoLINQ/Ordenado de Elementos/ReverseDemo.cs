@@ -26,7 +26,7 @@ namespace CursoLINQ.Modulo_3
                             select n;
 
             //personas.Reverse();
-
+            //Creo enumerado para poder aplicar reverse
             var personasInvertido = personas.AsEnumerable().Reverse().ToList();
         }
     }

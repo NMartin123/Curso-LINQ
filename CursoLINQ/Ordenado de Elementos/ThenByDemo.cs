@@ -19,7 +19,9 @@ new Persona { Nombre = "Roberto", Edad = 61, FechaIngresoALaEmpresa = DateTime.N
 };
 
             var personasOrdenadasPorEdad = personas.OrderBy(x => x.Edad).ThenByDescending(x => x.Nombre);
-
+            
+            var personasOrdenadasPorEdad = personas.OrderBy(x => x.Edad).ThenBy(x => x.Nombre);
+            
             foreach (var persona in personasOrdenadasPorEdad)
             {
                 Console.WriteLine($"{persona.Nombre} tiene {persona.Edad} años de edad");
